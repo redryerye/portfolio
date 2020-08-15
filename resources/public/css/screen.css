@@ -26,7 +26,7 @@ iframe {
   margin-bottom: 27px;
 }
 
-.about-contet a,
+.about-content a,
 a:link,
 a:visited,
 a:focus,
@@ -183,5 +183,17 @@ li {
 @media only screen and (max-width: 768px) {
   body {
     font-size: 15px;
+  }
+}
+
+@media (min-width: 320px) and (max-width: 480px) {
+  .about-content {
+    margin: 53px 35px;
+  }
+  .list-button {
+    margin: 0 35px;
+  }
+  .list-link {
+    left: 35px;
   }
 }
