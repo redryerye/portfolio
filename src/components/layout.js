@@ -1,16 +1,29 @@
 import React from "react"
-import { Link } from "gatsby"
+import { useStaticQuery, Link } from "gatsby"
 
 const Layout = ({ location, title, children }) => {
+  const data = useStaticQuery(graphql`
+  query LayoutQuery {
+    site {
+      siteMetadata {
+        author {
+          name
+        }
+      }
+    }
+  }
+`)
+
   const rootPath = `${__PATH_PREFIX__}/`
   const isRootPath = location.pathname === rootPath
-  const isBlog = location.pathname === '/blog'
+  const isBlog = location.pathname.includes('/blog')
+  const author = data.site.siteMetadata?.author?.name
   let header
 
   if (isBlog) {
     header = (
       <Link className="header-link-home" to="/blog">
-        {title}'s Blog
+        {author}'s Blog
       </Link>
     )
   } else {
