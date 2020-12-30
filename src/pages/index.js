@@ -1,89 +1,99 @@
 import React from "react"
-import { Link, graphql } from "gatsby"
+import { Link, graphql, useStaticQuery } from "gatsby"
+import Image from "gatsby-image"
 
-import Bio from "../components/bio"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 
-const BlogIndex = ({ data, location }) => {
-  const siteTitle = data.site.siteMetadata?.title || `Title`
-  const posts = data.allMarkdownRemark.nodes
+const Home = ({ data, location }) => {
+  // console.log(data);
+  console.log(location);
+  const query = useStaticQuery(graphql`
+    query HomeQuery {
+      github: file(absolutePath: { regex: "/logo_github.png/" }) {
+        childImageSharp {
+          fixed(width: 100) {
+            ...GatsbyImageSharpFixed
+          }
+        }
+      }
+      youtube: file(absolutePath: { regex: "/logo_youtube.png/" }) {
+        childImageSharp {
+          fixed(width: 100) {
+            ...GatsbyImageSharpFixed
+          }
+        }
+      }
+      twitter: file(absolutePath: { regex: "/logo_twitter.png/" }) {
+        childImageSharp {
+          fixed(width: 100) {
+            ...GatsbyImageSharpFixed
+          }
+        }
+      }
+    }
+  `)
 
-  if (posts.length === 0) {
-    return (
-      <Layout location={location} title={siteTitle}>
-        <SEO title="All posts" />
-        <Bio />
-        <p>
-          No blog posts found. Add markdown posts to "content/blog" (or the
-          directory you specified for the "gatsby-source-filesystem" plugin in
-          gatsby-config.js).
-        </p>
-      </Layout>
-    )
-  }
+  const github = query?.github?.childImageSharp?.fixed
+  const youtube = query?.youtube?.childImageSharp?.fixed
+  const twitter = query?.twitter?.childImageSharp?.fixed
 
   return (
-    <Layout location={location} title={siteTitle}>
-      <SEO title="All posts" />
-      <Bio />
-      <ol style={{ listStyle: `none` }}>
-        {posts.map(post => {
-          const title = post.frontmatter.title || post.fields.slug
-
-          return (
-            <li key={post.fields.slug}>
-              <article
-                className="post-list-item"
-                itemScope
-                itemType="http://schema.org/Article"
-              >
-                <header>
-                  <h2>
-                    <Link to={post.fields.slug} itemProp="url">
-                      <span itemProp="headline">{title}</span>
-                    </Link>
-                  </h2>
-                  <small>{post.frontmatter.date}</small>
-                </header>
-                <section>
-                  <p
-                    dangerouslySetInnerHTML={{
-                      __html: post.frontmatter.description || post.excerpt,
-                    }}
-                    itemProp="description"
-                  />
-                </section>
-              </article>
-            </li>
-          )
-        })}
-      </ol>
+    <Layout location={location}>
+      <SEO title="Home" />
+      <div class="home-list">
+        <ul>
+          <li>
+            <h1>
+              <Link to="/about">About me</Link>
+            </h1>
+          </li>
+          <li>
+            <h1>
+              <Link to="/blog">Blog</Link>
+            </h1>
+          </li>
+        </ul>
+      </div>
+      <div>
+        <ul>
+          <li>
+            <a href="https://github.com/redryerye" target="_blank">
+            <Image
+              fixed={github}
+              alt="Github"
+            />
+            </a>
+          </li>
+          <li>
+            <a href="https://www.youtube.com/channel/UCT-om9iFTiQTom5tjNfmGHw" target="_blank">
+              <Image
+                fixed={youtube}
+                alt="Youtube"
+              />
+            </a>
+          </li>
+          <li>
+            <iframe
+              class="sound-cloud-logo"
+              allowtransparency="true"
+              scrolling="no"
+              frameborder="no"
+              src="https://w.soundcloud.com/icon/?url=http%3A%2F%2Fsoundcloud.com%2Fredryerye&color=white_transparent&size=40"
+            />
+          </li>
+          <li>
+            <a href="https://twitter.com/redryerye" target="_blank">
+              <Image
+                fixed={twitter}
+                alt="Twitter"
+              />
+            </a>
+          </li>
+        </ul>
+      </div>
     </Layout>
   )
 }
 
-export default BlogIndex
-
-export const pageQuery = graphql`
-  query {
-    site {
-      siteMetadata {
-        title
-      }
-    }
-    allMarkdownRemark(sort: { fields: [frontmatter___date], order: DESC }) {
-      nodes {
-        excerpt
-        fields {
-          slug
-        }
-        frontmatter {
-          date(formatString: "MMMM DD, YYYY")
-          title
-          description
-        }
-      }
-    }
-  }
-`
+export default Home
