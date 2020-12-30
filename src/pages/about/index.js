@@ -14,13 +14,19 @@ const About = ({ location }) => {
           }
         }
       }
+      site {
+        siteMetadata {
+          title
+        }
+      }
     }
   `)
 
   const icon = query?.icon?.childImageSharp?.fixed
+  const siteTitle = query.site.siteMetadata?.title || `redryerye`
 
   return (
-    <Layout location={location}>
+    <Layout location={location} title={siteTitle}>
       <Link to="/">
         <Image
           fixed={icon}

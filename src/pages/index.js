@@ -29,15 +29,21 @@ const Home = ({ location }) => {
           }
         }
       }
+      site {
+        siteMetadata {
+          title
+        }
+      }
     }
   `)
 
   const github = query?.github?.childImageSharp?.fixed
   const youtube = query?.youtube?.childImageSharp?.fixed
   const twitter = query?.twitter?.childImageSharp?.fixed
+  const siteTitle = query.site.siteMetadata?.title || `redryerye`
 
   return (
-    <Layout location={location}>
+    <Layout location={location} title={siteTitle}>
       <SEO title="Home" />
       <div class="home-list">
         <ul>

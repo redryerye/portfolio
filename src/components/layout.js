@@ -4,13 +4,14 @@ import { Link } from "gatsby"
 const Layout = ({ location, title, children }) => {
   const rootPath = `${__PATH_PREFIX__}/`
   const isRootPath = location.pathname === rootPath
+  const isBlog = location.pathname === '/blog'
   let header
 
-  if (isRootPath) {
+  if (isBlog) {
     header = (
-      <h1 className="main-heading">
-        <Link to="/">{title}</Link>
-      </h1>
+      <Link className="header-link-home" to="/blog">
+        {title}'s Blog
+      </Link>
     )
   } else {
     header = (
