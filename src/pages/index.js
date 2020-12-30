@@ -5,9 +5,7 @@ import Image from "gatsby-image"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 
-const Home = ({ data, location }) => {
-  // console.log(data);
-  console.log(location);
+const Home = ({ location }) => {
   const query = useStaticQuery(graphql`
     query HomeQuery {
       github: file(absolutePath: { regex: "/logo_github.png/" }) {

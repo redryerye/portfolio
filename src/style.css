@@ -31,7 +31,7 @@
     "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   --fontFamily-serif: "Merriweather", "Georgia", Cambria, "Times New Roman",
     Times, serif;
-  --font-body: var(--fontFamily-serif);
+  --font-body: var(--fontFamily-sans);
   --font-heading: var(--fontFamily-sans);
   --fontWeight-normal: 400;
   --fontWeight-medium: 500;
@@ -53,11 +53,11 @@
   --fontSize-5: 2.074rem;
   --fontSize-6: 2.488rem;
   --fontSize-7: 2.986rem;
-  --color-primary: #005b99;
+  --color-primary: #ffffff;
   --color-secondary: #2e353f;
   --color-text: #ffffff;
   --color-text-light: #4f5969;
-  --color-heading: #1a202c;
+  --color-heading: #ffffff;
   --color-heading-black: rgb(255, 255, 255);
   --color-accent: #d1dce5;
   --color-background: #0B1427;
@@ -235,11 +235,6 @@ table thead tr th {
 
 a {
   color: var(--color-primary);
-}
-
-a:hover,
-a:focus {
-  text-decoration: none;
 }
 
 /* Custom classes */
