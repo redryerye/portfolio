@@ -3,6 +3,7 @@ import { Link, graphql, useStaticQuery } from "gatsby"
 import Image from "gatsby-image"
 
 import Layout from "../../components/layout"
+import SEO from "../components/seo"
 
 const About = ({ location }) => {
   const query = useStaticQuery(graphql`
@@ -27,6 +28,7 @@ const About = ({ location }) => {
 
   return (
     <Layout location={location} title={siteTitle}>
+      <SEO title="About me" />
       <Link to="/">
         <Image
           fixed={icon}
