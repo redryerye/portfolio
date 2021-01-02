@@ -2,9 +2,9 @@ import React from "react"
 import PropTypes from "prop-types"
 import { Helmet } from "react-helmet"
 import { useStaticQuery, graphql } from "gatsby"
-import ogp from "../../content/assets/ogp-image.png"
+import defaultOgp from "../../content/assets/ogp-image.png"
 
-const SEO = ({ description, lang, meta, title }) => {
+const SEO = ({ description, lang, meta, title, image }) => {
   const { site } = useStaticQuery(
     graphql`
       query {
@@ -16,6 +16,9 @@ const SEO = ({ description, lang, meta, title }) => {
             social {
               twitter
             }
+            author {
+              name
+            }
           }
         }
       }
@@ -24,8 +27,8 @@ const SEO = ({ description, lang, meta, title }) => {
 
   const metaDescription = description || site.siteMetadata.description
   const defaultTitle = site.siteMetadata?.title
-  const ogpImage = `${site.siteMetadata?.siteUrl}${ogp}`
-  console.log(ogpImage)
+  const ogpImage = `${site.siteMetadata?.siteUrl}${image || defaultOgp}`
+  const name = site.siteMetadata?.author?.name
   
   return (
     <Helmet
@@ -41,7 +44,7 @@ const SEO = ({ description, lang, meta, title }) => {
         },
         {
           property: `og:title`,
-          content: `${title} | ${defaultTitle}`,
+          content: `${title} | ${name}`,
         },
         {
           property: `og:description`,
@@ -73,7 +76,7 @@ const SEO = ({ description, lang, meta, title }) => {
         },
         {
           name: `twitter:title`,
-          content: title,
+          content: `${title} | ${name}`,
         },
         {
           name: `twitter:description`,
