@@ -32,6 +32,7 @@ const SEO = ({ description, lang, meta, title }) => {
   const metaDescription = description || site.siteMetadata.description
   const defaultTitle = site.siteMetadata?.title
   const ogpImage = `${site.siteMetadata?.siteUrl}${ogp}`
+  console.log(ogpImage)
   
   return (
     <Helmet
@@ -47,7 +48,7 @@ const SEO = ({ description, lang, meta, title }) => {
         },
         {
           property: `og:title`,
-          content: title,
+          content: `${title} | redryerye`,
         },
         {
           property: `og:description`,
