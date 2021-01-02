@@ -6,7 +6,7 @@ module.exports = {
       summary: `who loves mobile development and hip-hop.`,
     },
     description: `A blog that gets updated sometimes.`,
-    siteUrl: `https://gatsby-starter-blog-demo.netlify.app/`,
+    siteUrl: `https://www.redryerye.com/`,
     social: {
       twitter: `redryerye`,
     },
@@ -61,13 +61,13 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `Gatsby Starter Blog`,
-        short_name: `GatsbyJS`,
+        name: `redryerye`,
+        short_name: `redryerye`,
         start_url: `/`,
         background_color: `#ffffff`,
         theme_color: `#663399`,
         display: `minimal-ui`,
-        icon: `content/assets/gatsby-icon.png`,
+        icon: `content/assets/profile.png`,
       },
     },
     `gatsby-plugin-react-helmet`,
