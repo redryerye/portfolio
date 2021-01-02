@@ -23,7 +23,7 @@ ogimage: "./sunrise.png"
 カルディで買えます。
 
 # Datomic
-前職に熱烈なClopjurianが居て、その方の布教によって使うことになったDBMS、[Datomic](https://www.datomic.com/)。
+前職に熱烈なClojurianが居て、その方の布教によって使うことになったDBMS、[Datomic](https://www.datomic.com/)。
 
 クエリ言語がDatalogで、これが非常に楽しい。<br>
 最初、何も分からず露頭に迷っていたところに[このチュートリアル](https://learn-datalog-today-ja.herokuapp.com/)を発見して、完全に理解した。<br>
@@ -38,13 +38,13 @@ DatomicはDatomという5つのフィールドから成り立つ特有のデー�
 すべての面を考慮して「使いやすい技術」を選ばないと辛いことが多いなと、技術選定の難しさを噛み締めた。
 
 # [Dark](https://darklang.com/)
-Clojureの父であるRich Hickeyが言っている[「SimpleはEasyとは違う」](https://www.youtube.com/watch?v=oytL881p-nQ)という話がよく表されていると感じるバックエンド。
+Clojureの父であるRich Hickeyが言っている[「SimpleはEasyとは違う」](https://www.youtube.com/watch?v=oytL881p-nQ)という話がよく表されているバックエンド。
 
 AWSの分かりにくいコンソールを眺めることなく一瞬でサーバレスバックエンドを作れてしまう。面倒なところが上手く単純化されている。<br>
 ボット作ったりCRUDアプリを作るならこれを使いたいところ。
 
-ただ、まだまだ発展途上のサービスであるため、細かいところに手が届かないことや不完全な箇所がが少々ある。困ったときは[Slack](http://darklang.com/slack-invite)を見よう。<br>
-収益化するのも[大変なこと](https://blog.darklang.com/dark-devlog-1-fresh-start/)が色々あるそう。
+ただ、まだまだ発展途上のサービスであるため、細かいところに手が届かないことや不完全な箇所がが少々ある。困ったときは[DarklangのSlack](http://darklang.com/slack-invite)を見よう。<br>
+このサービスを収益化するのも[大変なこと](https://blog.darklang.com/dark-devlog-1-fresh-start/)が色々あるそう。
 
 ただコンセプトは非常に面白いし、技術的にも面白いことをしているので長い目でチェックしていきたい。
 
@@ -53,13 +53,13 @@ UIをカスタマイズしてデータベースの情報を簡単に可視化す
 これで社内ツールを作成した。
 
 APIが用意されていればUIを組み合わせるだけで容易に管理ツールが作れる。<br>
-用意されているUIコンポーネントをを使えば大体のことは出来る。
+用意されているUIコンポーネントを使えば大体のことは出来る。
 
 最近流行りのNo-codeの文脈に近いが、大きな違いは開発者向けであるという点。<br>
 データベースから取ってきたデータをJavascriptを使って変形して、UIコンポーネントにデータを渡したりする。<br>
 なので、あくまでUIにかけるコストを削減するためのツール。
 
-会社としても順調そうで、これからエンタープライズも強化してツールとして伸びそう。
+会社としても順調そうで、これからエンタープライズ版も強化してツールとして伸びそう。
 
 # PointFree
 現職で[The Composable Architecture](https://github.com/pointfreeco/swift-composable-architecture)を使用しているため、かなり見た。
@@ -79,7 +79,7 @@ TCAに限らずSwiftの基本機能について深堀る。クオリティも高
 
 インターネットの速度が7mbpsだった元の家から500mbpsになった。実に71倍。
 
-こんなところかな。<br>
-今年の目標は達成した気分になってしまうので書きません。
+こんなところ。<br>
+今年の目標は達成した気分になってしまうので書くのを控える。
 
 楽しみたい。
