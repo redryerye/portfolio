@@ -35,10 +35,10 @@ const About = ({ location }) => {
           alt="Profile"
         />
       </Link>
-      <div class="about-name">
+      <div>
         <h1>Yuki Yamamoto</h1>
       </div>
-      <div class="about-me about-section">
+      <div>
         <h2>About me</h2>
         <p>
           I'm a software engineer, and I love iOS development and hip-hop.
@@ -55,9 +55,9 @@ const About = ({ location }) => {
         </p>
       </div>
       <hr />
-      <div class="about-experience about-section">
+      <div>
         <h2>Experience</h2>
-        <ul>
+        <ul class="no-bullet">
           <li>Oct 2020 - Current | KANKAK | iOS Engineer</li>
           <li>Aug 2018 - Sep 2020 | Amatorium | CTO</li>
           <li>Feb 2018 - May 2018 | My Student Quarters | Matketing Intern</li>
@@ -69,15 +69,15 @@ const About = ({ location }) => {
         <p>For more info: <a href="https://www.linkedin.com/in/iamyukiyamamoto" target="_blank">LinkedIn</a></p>
       </div>
       <hr />
-      <div class="about-talks about-section">
+      <div>
         <h2>Talks</h2>
         <h3>2020</h3>
-        <ul>
+        <ul class="no-bullet">
           <li><a href="https://fortee.jp/iosdc-japan-2020/proposal/36676fca-9823-4a22-a90b-8eb2e98f4b1a"
               target="_blank">“In App Purchaseのこれからの在り方を考える”</a> @ iOSDC Japan 2020</li>
         </ul>
         <h3>2019</h3>
-        <ul>
+        <ul class="no-bullet">
           <li><a href="https://speakerdeck.com/redryerye/tvosnitiyotutozhu-mu-sitemiru"
               target="_blank">“tvOSにちょっと注目してみる”</a> @ iOSDC Japan 2019</li>
           <li><a href="https://speakerdeck.com/redryerye/implementing-mvvm-in-2019" target="_blank">“Implementing MVVM in
@@ -87,7 +87,7 @@ const About = ({ location }) => {
         </ul>
       </div>
       <hr />
-      <div class="about-contact about-section">
+      <div>
         <h2>Contact</h2>
         <p>Drop me an email at yymmt3 [at] gmail.com or send me a message on <a href="https://twitter.com/redryerye"
             target="_blank">Twitter</a>

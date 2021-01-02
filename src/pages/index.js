@@ -46,7 +46,7 @@ const Home = ({ location }) => {
     <Layout location={location} title={siteTitle}>
       <SEO title="Home" />
       <div class="home-list">
-        <ul>
+        <ul class="no-bullet">
           <li>
             <h1>
               <Link to="/about">About me</Link>
@@ -60,7 +60,7 @@ const Home = ({ location }) => {
         </ul>
       </div>
       <div>
-        <ul>
+        <ul class="no-bullet">
           <li>
             <a href="https://github.com/redryerye" target="_blank">
             <Image

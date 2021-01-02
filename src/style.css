@@ -184,7 +184,6 @@ ul li,
 ol li {
   padding-left: var(--spacing-0);
   margin-bottom: calc(var(--spacing-8) / 2);
-  list-style-type: none;
 }
 
 li > p {
@@ -320,6 +319,10 @@ a {
 
 .home-list {
   margin-bottom: 20vh;
+}
+
+.no-bullet {
+  list-style-type: none;
 }
 
 .sound-cloud-logo {
