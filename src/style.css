@@ -40,6 +40,7 @@
   --fontWeight-extrabold: 800;
   --fontWeight-black: 400;
   --fontSize-root: 16px;
+  --fontSize-small: 14px;
   --lineHeight-none: 1;
   --lineHeight-tight: 1.1;
   --lineHeight-normal: 1.5;
@@ -323,6 +324,12 @@ a {
 
 .no-bullet {
   list-style-type: none;
+}
+
+.image-desc {
+  text-align: center;
+  font-size: var(--fontSize-small);
+  font-style: italic;
 }
 
 .sound-cloud-logo {
