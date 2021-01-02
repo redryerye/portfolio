@@ -72,6 +72,8 @@ TCAに限らずSwiftの基本機能について深堀る。クオリティも高
 今年はしばらくいたスタートアップを辞めて、初の転職活動をした。
 
 嬉しいことに最終的には、転職活動当初は全く予想をしていなかった会社からオファーをいただき、戦闘力が高い方々と楽しく開発している。<br>
+<blockquote class="twitter-tweet"><p lang="ja" dir="ltr">今日からカンカクにジョインしました！美味しいコーヒー飲みながらわいわいやっていきます〜☕️麻布十番・北参道にカフェがあるので是非！！！</p>&mdash; yuki (@redryerye) <a href="https://twitter.com/redryerye/status/1318136045095985153?ref_src=twsrc%5Etfw">October 19, 2020</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+
 [モバイルオーダーアプリ](https://kankak.com/coffee-app.html)を開発すると同時に店舗も作っていて、ひたすらSaasを作る感じとは全く違うので学びが多い。
 [美味しいコーヒーが飲める](https://tailoredcafe.jp/)ので良かったら遊びに来て欲しい。
 
