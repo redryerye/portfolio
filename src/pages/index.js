@@ -45,8 +45,8 @@ const Home = ({ location }) => {
   return (
     <Layout location={location} title={siteTitle}>
       <SEO title="Home" />
-      <div class="home-list">
-        <ul class="no-bullet">
+      <div className="home-list">
+        <ul className="no-bullet">
           <li>
             <h1>
               <Link to="/about">About me</Link>
@@ -60,7 +60,7 @@ const Home = ({ location }) => {
         </ul>
       </div>
       <div>
-        <ul class="no-bullet">
+        <ul className="no-bullet">
           <li>
             <a href="https://github.com/redryerye" target="_blank">
             <Image
@@ -79,10 +79,10 @@ const Home = ({ location }) => {
           </li>
           <li>
             <iframe
-              class="sound-cloud-logo"
+              className="sound-cloud-logo"
               allowtransparency="true"
               scrolling="no"
-              frameborder="no"
+              frameBorder="no"
               src="https://w.soundcloud.com/icon/?url=http%3A%2F%2Fsoundcloud.com%2Fredryerye&color=white_transparent&size=40"
             />
           </li>

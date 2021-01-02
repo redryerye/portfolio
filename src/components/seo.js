@@ -9,6 +9,7 @@ import React from "react"
 import PropTypes from "prop-types"
 import { Helmet } from "react-helmet"
 import { useStaticQuery, graphql } from "gatsby"
+import ogp from "../images/ogp-image.png"
 
 const SEO = ({ description, lang, meta, title }) => {
   const { site } = useStaticQuery(
@@ -18,6 +19,7 @@ const SEO = ({ description, lang, meta, title }) => {
           siteMetadata {
             title
             description
+            siteUrl
             social {
               twitter
             }
@@ -29,7 +31,8 @@ const SEO = ({ description, lang, meta, title }) => {
 
   const metaDescription = description || site.siteMetadata.description
   const defaultTitle = site.siteMetadata?.title
-
+  const ogpImage = `${site.siteMetadata?.siteUrl}${ogp}`
+  
   return (
     <Helmet
       htmlAttributes={{
@@ -49,6 +52,10 @@ const SEO = ({ description, lang, meta, title }) => {
         {
           property: `og:description`,
           content: metaDescription,
+        },
+        {
+          property: `og:image`,
+          content: ogpImage,
         },
         {
           property: `og:type`,
