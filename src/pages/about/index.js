@@ -56,13 +56,10 @@ const About = ({ location }) => {
       </div>
       <hr />
       <div>
-        <h2>Experience</h2>
+        <h2>Experiences</h2>
         <ul className="no-bullet">
           <li>Oct 2020 - Current | KANKAK | iOS Engineer</li>
           <li>Aug 2018 - Sep 2020 | Amatorium | CTO</li>
-          <li>Feb 2018 - May 2018 | My Student Quarters | Matketing Intern</li>
-          <li>Jan 2018 - May 2018 | 1776 | Research Intern</li>
-          <li>Jun 2017 - Aug 2017 | Remote Work, Inc. | Marketing Intern</li>
           <li>May 2017 - Aug 2017 | Sekai Creator | Creator</li>
           <li>Dec 2016 - Jul 2017 | Mediotech Co. | Web Engineer Intern</li>
         </ul>
