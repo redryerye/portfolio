@@ -5,7 +5,7 @@ ogimage: "./fire.png"
 ---
 <blockquote class="twitter-tweet"><p lang="ja" dir="ltr">妻が「おしゃべりな人には有益な情報が集まる」と言っていて面白いと思いました<br><br>言い換えるとアウトプットしている人は自分で頑張ってインプットもするんだけど、アウトプットしているとどこからかリアクションなり新しい話が入ってくるんですよね<br><br>対面で話すの苦手だけど文字ならいけそうな気がする</p>&mdash; 堀新一郎(ほりしん)@STARTUP本 (@horrrrry) <a href="https://twitter.com/horrrrry/status/1351799826686517248?ref_src=twsrc%5Etfw">January 20, 2021</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 
-こんなツイートを見つけてその通りだなと思ったので、ふと書こうと思った最近のハーブティ事情について話す。
+こんなツイートを見つけてその通りだなと思ったので、ふと考えついた最近のハーブティ事情について書く。
 
 # TL;DR
 - Bedtime Teaが実店舗で品薄
