@@ -41,17 +41,17 @@ const About = ({ location }) => {
       <div>
         <h2>About me</h2>
         <p>
-          I'm a software engineer, and I love iOS development and hip-hop.
+          I'm a software engineer, and I love iOS development and hiphop.
         </p>
         <p>
           In 2018, I started working on <a href="https://vall.app"
-            target="_blank">VALL</a> with my friends, where I created
-          a streaming platform from scratch using unique tech stacks,
-           including AWS Lambda and <a href="https://www.datomic.com/"
-            target="_blank">Datomic</a>. Along the way, I've found a passion for iOS development.
+          target="_blank">VALL</a> , an art streaming platform, with my friends.
+          I mainly utilized Clojure to manage a database built with <a href="https://www.datomic.com/"
+            target="_blank">Datomic</a>, and Swift to develop an iOS app. Later on, 
+          I found a passion for iOS development.
         </p>
         <p>
-          Other than software development, I have a deep love for Hiphop. I produce music and dance.
+          Other than software development, I have a deep love for hiphop. I produce music and dance.
         </p>
       </div>
       <hr />
