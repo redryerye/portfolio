@@ -45,10 +45,10 @@ const About = ({ location }) => {
         </p>
         <p>
           In 2018, I started working on <a href="https://vall.app"
-          target="_blank">VALL</a> , an art streaming platform, with my friends.
-          I mainly utilized Clojure to manage a database built with <a href="https://www.datomic.com/"
-            target="_blank">Datomic</a>, and Swift to develop an iOS app. Later on, 
-          I found a passion for iOS development.
+          target="_blank">VALL</a>, an art streaming platform, with my friends.
+          Using <a href="https://www.datomic.com/" target="_blank">Datomic</a> to manage the database was the fun part.
+          Right now, I am part of a startup called KANKAK where I develop 
+          <a href="https://apps.apple.com/jp/app/coffee-app/id1470570852" target="_blank">COFFEE APP</a>, a mobile ordering app.
         </p>
         <p>
           Other than software development, I have a deep love for hiphop. I produce music and dance.
@@ -60,7 +60,6 @@ const About = ({ location }) => {
         <ul className="no-bullet">
           <li>Oct 2020 - Current | KANKAK | iOS Engineer</li>
           <li>Aug 2018 - Sep 2020 | Amatorium | CTO</li>
-          <li>May 2017 - Aug 2017 | Sekai Creator | Creator</li>
           <li>Dec 2016 - Jul 2017 | Mediotech Co. | Web Engineer Intern</li>
         </ul>
         <p>For more info: <a href="https://www.linkedin.com/in/iamyukiyamamoto" target="_blank">LinkedIn</a></p>
