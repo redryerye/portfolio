@@ -39,7 +39,7 @@ const Layout = ({ location, title, children }) => {
       <header className="global-header">{header}</header>
       <main>{children}</main>
       <footer>
-        © {new Date().getFullYear()}, Yuki Yamamoto
+        © 2020-{new Date().getFullYear()}, Yuki Yamamoto
       </footer>
     </div>
   )
