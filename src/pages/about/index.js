@@ -47,7 +47,7 @@ const About = ({ location }) => {
           In 2018, I started working on <a href="https://vall.app"
           target="_blank">VALL</a>, an art streaming platform, with my friends.
           From Raspi to websites, apps, and Cloud, I contributed to making the platform using a wide range of tech stacks, but using <a href="https://www.datomic.com/" target="_blank">Datomic</a> to manage the database was the most interesting part.<br />
-          Right now, I am part of a startup called KANKAK where I develop <a href="https://apps.apple.com/jp/app/coffee-app/id1470570852"
+          Right now, I am part of a startup called KANKAK where I develop <a href="https://apps.apple.com/us/app/coffee-app/id1470570852"
           target="_blank">COFFEE App</a>, a mobile ordering app.
         </p>
         <p>
