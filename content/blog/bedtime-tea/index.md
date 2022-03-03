@@ -7,7 +7,7 @@ ogimage: "./fire.png"
 
 こんなツイートを見つけてその通りだなと思ったので、ふと考えついた最近のハーブティ事情について書く。
 
-# TL;DR
+## TL;DR
 - Bedtime Teaが実店舗で品薄
 - 代わりに<a href="https://onlineshop.treeoflife.co.jp/ec/pro/disp/1/024773240">ムーンガーデン</a>を買ったがしっくりこない
 - 結局Bedtime Teaをまとめ買いした

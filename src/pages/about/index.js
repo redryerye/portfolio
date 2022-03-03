@@ -44,11 +44,10 @@ const About = ({ location }) => {
           I'm a software engineer, and I love iOS development and hiphop.
         </p>
         <p>
-          In 2018, I started working on <a href="https://vall.app"
-          target="_blank">VALL</a>, an art streaming platform, with my friends.
-          Using <a href="https://www.datomic.com/" target="_blank">Datomic</a> to manage the database was the fun part.<br />
+          In 2018, I started working at an art tech startup where I contributed as a full stack developer,
+          and I got interested in iOS development throughout the project.<br />
           Right now, I am part of a startup called KANKAK where I develop <a href="https://apps.apple.com/jp/app/coffee-app/id1470570852"
-          target="_blank">COFFEE APP</a>, a mobile ordering app.
+          target="_blank">COFFEE APP</a>, a mobile ordering app, as an iOS Engineer.
         </p>
         <p>
           Other than software development, I have a deep love for hiphop. I produce music and dance.

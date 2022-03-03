@@ -13,7 +13,7 @@ ogimage: "./sunrise.png"
 
 さて、2020年を振り返えっていくが、淡々と変遷を辿っていくのではなく出会って良かったモノや技術などをピックアップしていく。
 
-# Bedtime Tea
+## Bedtime Tea
 まずは愛用した飲みもの。
 
 中々寝付けないと悩んでいたときに発見した[ハーブティ](https://yogiproducts.com/teas/herbal-teas/bedtime/)。<br>
@@ -22,7 +22,7 @@ ogimage: "./sunrise.png"
 
 カルディで買えます。
 
-# Datomic
+## Datomic
 前職に熱烈なClojurianが居て、その方の布教によって使うことになったDBMS、[Datomic](https://www.datomic.com/)。
 
 クエリ言語がDatalogで、これが非常に楽しい。<br>
@@ -37,7 +37,7 @@ DatomicはDatomという5つのフィールドから成り立つ特有のデー�
 マイナーなフレームワークであるため、とにかくネットに転がっている情報が少ない。（廃れているわけではないので、コミュニティは存在する。Datomic Developers Forumで質問すると[jaretさん](https://forum.datomic.com/u/jaret/summary)が迅速に対応してくれて、Datomicはこの人のおかげで成り立ってるのかと思った）<br>
 すべての面を考慮して「使いやすい技術」を選ばないと辛いことが多いなと、技術選定の難しさを噛み締めた。
 
-# [Dark](https://darklang.com/)
+## [Dark](https://darklang.com/)
 Clojureの父であるRich Hickeyが言っている[「SimpleはEasyとは違う」](https://www.youtube.com/watch?v=oytL881p-nQ)という話がよく表されているバックエンド。
 
 AWSの分かりにくいコンソールを眺めることなく一瞬でサーバレスバックエンドを作れてしまう。面倒なところが上手く単純化されている。<br>
@@ -48,7 +48,7 @@ AWSの分かりにくいコンソールを眺めることなく一瞬でサー�
 
 ただコンセプトは非常に面白いし、技術的にも面白いことをしているので長い目でチェックしていきたい。
 
-# Retool
+## Retool
 UIをカスタマイズしてデータベースの情報を簡単に可視化するツール。<br>
 これで社内ツールを作成した。
 
@@ -61,14 +61,14 @@ APIが用意されていればUIを組み合わせるだけで容易に管理ツ
 
 会社としても順調そうで、これからエンタープライズ版も強化してツールとして伸びそう。
 
-# PointFree
+## PointFree
 現職で[The Composable Architecture](https://github.com/pointfreeco/swift-composable-architecture)を使用しているため、かなり見た。
 
 [PointFree](https://www.pointfree.co/)はTCAの生みの親である開発者二人が提供しているSwiftに関する動画のサブスクサービスで、有益情報がてんこ盛りである。
 
 TCAに限らずSwiftの基本機能について深堀る。クオリティも高い。素晴らしい。
 
-# 人生
+## 人生
 今年はしばらくいたスタートアップを辞めて、初の転職活動をした。
 
 嬉しいことに最終的には、転職活動当初は全く予想をしていなかった会社からオファーをいただき、戦闘力が高い方々と楽しく開発している。<br>

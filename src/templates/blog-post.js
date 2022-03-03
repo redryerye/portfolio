@@ -26,7 +26,7 @@ const BlogPostTemplate = ({ data, location }) => {
       >
         <header>
           <h1 itemProp="headline">{post.frontmatter.title}</h1>
-          <p>{`${post.frontmatter.date} - ${post.fields.readingTime.text}`}</p>
+          <p>{`${post.frontmatter.date}`}</p>
         </header>
         <section
           dangerouslySetInnerHTML={{ __html: post.html }}
@@ -94,11 +94,6 @@ export const pageQuery = graphql`
               src
             }
           }
-        }
-      }
-      fields {
-        readingTime {
-          text
         }
       }
     }
