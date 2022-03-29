@@ -66,6 +66,11 @@ const About = ({ location }) => {
       <hr />
       <div>
         <h2>Talks</h2>
+        <h3>2022</h3>
+        <ul className="no-bullet">
+          <li><a href="https://speakerdeck.com/redryerye/finding-alternatives-for-graphql-client-for-ios"
+              target="_blank">“Finding alternatives for GraphQL client for iOS”</a> @ potatotips #77</li>
+        </ul>
         <h3>2020</h3>
         <ul className="no-bullet">
           <li><a href="https://fortee.jp/iosdc-japan-2020/proposal/36676fca-9823-4a22-a90b-8eb2e98f4b1a"
