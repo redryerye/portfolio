@@ -44,12 +44,6 @@ const About = ({ location }) => {
           I'm a software engineer, and I love iOS development and hiphop.
         </p>
         <p>
-          In 2018, I started working at an art tech startup where I contributed as a full stack developer,
-          and I got interested in iOS development throughout the project.<br />
-          Right now, I am part of a startup called KANKAK where I develop <a href="https://apps.apple.com/jp/app/coffee-app/id1470570852"
-          target="_blank">COFFEE APP</a>, a mobile ordering app, as an iOS Engineer.
-        </p>
-        <p>
           Other than software development, I have a deep love for hiphop. I produce music and dance.
         </p>
       </div>
@@ -57,7 +51,8 @@ const About = ({ location }) => {
       <div>
         <h2>Experiences</h2>
         <ul className="no-bullet">
-          <li>Oct 2020 - Current | KANKAK | iOS Engineer</li>
+          <li>Dec 2022 - Current | Dott | iOS Engineer</li>
+          <li>Oct 2020 - Nov 2022 | KANKAK | iOS Engineer</li>
           <li>Aug 2018 - Sep 2020 | Amatorium | CTO</li>
           <li>Dec 2016 - Jul 2017 | Mediotech Co. | Web Engineer Intern</li>
         </ul>
