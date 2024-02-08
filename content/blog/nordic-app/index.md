@@ -11,12 +11,12 @@ ogimage: "./city-view.png"
 ![ヘルシンキ大聖堂からの景色](./city-view.png)
 <p class="image-desc">ヘルシンキ大聖堂からの景色</p>
 
-### イチオシはコペンハーゲン
+### いちおしはコペンハーゲン
 
 三都市の中で一番住むのが想像できたのがコペンハーゲンだった。  
 ほどよい都会感と食のクオリティの高さ、そして整備されている自転車道を見るとなんとなく住むイメージが出来た。いい街だ。
 
-### Prologのコーヒーがおいしかった
+### おいしいコーヒー
 
 各都市でコーヒー屋を回ったところ、一番のお気に入りはコペンハーゲンのPrologというお店だった。美味しくて滞在中には2回も足を運んだ。
 
@@ -27,10 +27,10 @@ ogimage: "./city-view.png"
 ヘルシンキ中央図書館が非常に美しく、魅力的だった。
 モダンな建築で美しい建物であるだけでなく、作業にもってこいな作業室やDJの練習室を兼ね備えていたりと、スペックが素晴らしかった。空間が与える影響はとても大きい。
 
-### アプリに温かさを感じた
+### あたたかいアプリ
 
-滞在中の気候は総じて寒かったが、各国の交通機関のアプリが使いやすくて、デザインがなんだか温かった。
-以前ノルウェーに訪れた時に交通機関のソフトウェアのデザインが全体的に綺麗だったので、他の北欧の国もそうなのかもとは思っていた。
+滞在中の気候は総じて寒かったものの、各国の交通機関のアプリは非常に使いやすく、そのデザインになんだか温かみを感じた。
+以前ノルウェーを訪れた際、その国の交通機関のソフトウェアのデザインが全体的に綺麗であることに気付き、他の北欧の国もそうなのかもとは思っていた。
 
 <a href="https://t.co/lJ9YXm8cpX"><blockquote class="twitter-tweet"><p lang="en" dir="ltr">Loving the software design for transportation apps in Oslo 💞 <a href="https://t.co/lJ9YXm8cpX">pic.twitter.com/lJ9YXm8cpX</a></p>&mdash; Yuki (@redryerye) <a href="https://twitter.com/redryerye/status/1604631493149605889?ref_src=twsrc%5Etfw">December 19, 2022</a></blockquote></a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 
