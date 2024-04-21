@@ -1,5 +1,7 @@
 import React from "react"
 import { Link, graphql } from "gatsby"
+import InstagramEmbed from 'react-instagram-embed';
+
 
 import Bio from "../components/bio"
 import Layout from "../components/layout"
@@ -33,6 +35,8 @@ const BlogPostTemplate = ({ data, location }) => {
           itemProp="articleBody"
         />
         <hr />
+        {/* Temporary solution to execute script to load insta embeded content */}
+        <InstagramEmbed />
         <footer>
           <Bio />
         </footer>
