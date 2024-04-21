@@ -41,10 +41,11 @@ const About = ({ location }) => {
       <div>
         <h2>About me</h2>
         <p>
-          I'm a software engineer based in Pars, and I specifically enjoy developing iOS apps.
+          I'm a software engineer based in Paris.<br/>
+          I enjoy building products—especially by developing iOS apps.
         </p>
         <p>
-          Other than that, I have a deep love for hiphop. I produce music and dance.
+          Other than that, I have a deep love for hiphop. I dance and produce music.
         </p>
       </div>
       <hr />
