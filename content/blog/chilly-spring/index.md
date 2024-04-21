@@ -1,5 +1,5 @@
 ---
-title: 肌寒い日が続く4月
+title: 肌寒い4月
 date: "2024-04-21T23:59:00"
 ogimage: "./blackboard.png"
 ---
