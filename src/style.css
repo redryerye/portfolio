@@ -1,3 +1,6 @@
+/* Fonts */
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Noto+Sans+JP:wght@100..900&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+
 /* CSS Custom Properties Definitions */
 
 :root {
@@ -27,8 +30,7 @@
   --spacing-20: 5rem;
   --spacing-24: 6rem;
   --spacing-32: 8rem;
-  --fontFamily-sans: Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif,
-    "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  --fontFamily-sans: "Nunito Sans";
   --fontFamily-serif: "Merriweather", "Georgia", Cambria, "Times New Roman",
     Times, serif;
   --font-body: var(--fontFamily-sans);
@@ -54,14 +56,14 @@
   --fontSize-5: 2.074rem;
   --fontSize-6: 2.488rem;
   --fontSize-7: 2.986rem;
-  --color-primary: #ffffff;
+  --color-primary: #000;
   --color-secondary: #2e353f;
-  --color-text: #ffffff;
+  --color-text: #000;
   --color-text-light: #4f5969;
-  --color-heading: #ffffff;
-  --color-heading-black: rgb(255, 255, 255);
+  --color-heading: #000;
+  --color-heading-black: #000;
   --color-accent: #d1dce5;
-  --color-background: #0B1427;
+  --color-background: #fff;
 }
 
 /* HTML elements */
@@ -106,8 +108,8 @@ h4,
 h5,
 h6 {
   font-family: var(--font-heading);
-  margin-top: var(--spacing-12);
-  margin-bottom: var(--spacing-6);
+  margin-top: var(--spacing-8);
+  margin-bottom: var(--spacing-4);
   line-height: var(--lineHeight-tight);
   letter-spacing: -0.025em;
 }
@@ -117,34 +119,34 @@ h3,
 h4,
 h5,
 h6 {
-  font-weight: var(--fontWeight-normal);
+  font-weight: var(--fontWeight-semibold);
   color: var(--color-heading);
 }
 
 h1 {
   font-weight: var(--fontWeight-black);
-  font-size: var(--fontSize-6);
+  font-size: var(--fontSize-5);
   color: var(--color-heading-black);
 }
 
 h2 {
-  font-size: var(--fontSize-5);
-}
-
-h3 {
   font-size: var(--fontSize-4);
 }
 
-h4 {
+h3 {
   font-size: var(--fontSize-3);
 }
 
-h5 {
+h4 {
   font-size: var(--fontSize-2);
 }
 
-h6 {
+h5 {
   font-size: var(--fontSize-1);
+}
+
+h6 {
+  font-size: var(--fontSize-0);
 }
 
 h1 > a {
@@ -167,7 +169,7 @@ p {
   line-height: var(--lineHeight-relaxed);
   --baseline-multiplier: 0.179;
   --x-height-multiplier: 0.35;
-  margin: var(--spacing-4) var(--spacing-0) var(--spacing-4) var(--spacing-0);
+  margin: var(--spacing-3) var(--spacing-0) var(--spacing-3) var(--spacing-0);
   padding: var(--spacing-0);
 }
 
@@ -184,7 +186,7 @@ ol {
 ul li,
 ol li {
   padding-left: var(--spacing-0);
-  margin-bottom: calc(var(--spacing-6) / 2);
+  margin-bottom: var(--spacing-1);
 }
 
 li > p {
@@ -325,10 +327,6 @@ header h2 {
   margin-bottom: var(--spacing-8);
 }
 
-.home-list {
-  margin-bottom: 20vh;
-}
-
 .no-bullet {
   list-style-type: none;
 }
@@ -349,6 +347,103 @@ header h2 {
 
 .video-vertical {
   text-align: center;
+}
+
+.gradient-link {
+  color: black;
+  background-image: linear-gradient(
+    90deg,
+    red,
+    orange,
+    yellow,
+    green,
+    blue,
+    violet
+  );
+  background-size: 200% 100%;
+  background-clip: text;
+  -webkit-background-clip: text;
+  transition: color 0.3s ease, background-position 0.3s ease;
+}
+
+.gradient-link:hover {
+  color: transparent;
+  text-decoration: underline;
+  background-position: -100% 0;
+  animation: rainbow 1.8s linear infinite;
+}
+
+@keyframes rainbow {
+  0% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: -100% 50%;
+  }
+}
+
+@keyframes shake {
+  0% {
+    transform: rotate(0deg);
+  }
+  10% {
+    transform: rotate(-10deg);
+  }
+  20% {
+    transform: rotate(-30deg);
+  }
+  30% {
+    transform: rotate(-10deg);
+  }
+  40% {
+    transform: rotate(0deg);
+  }
+  50% {
+    transform: rotate(10deg);
+  }
+  60% {
+    transform: rotate(20deg);
+  }
+  70% {
+    transform: rotate(10deg);
+  }
+  80% {
+    transform: rotate(0deg);
+  }
+  90% {
+    transform: rotate(-10deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+
+.shake {
+  display: inline-block;
+  animation: shake 0.5s ease-in-out;
+  animation-iteration-count: 1;
+}
+
+@keyframes bounce {
+  0%,
+  20%,
+  50%,
+  80%,
+  100% {
+    transform: translateY(0);
+  }
+  40% {
+    transform: translateY(-10px);
+  }
+  60% {
+    transform: translateY(-5px);
+  }
+}
+
+.bounce {
+  display: inline-block;
+  animation: bounce 1s ease;
+  animation-iteration-count: 1;
 }
 
 /* Media queries */

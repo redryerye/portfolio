@@ -29,14 +29,14 @@ const SEO = ({ description, lang, meta, title, image }) => {
   const defaultTitle = site.siteMetadata?.title
   const ogpImage = `${site.siteMetadata?.siteUrl}${image || defaultOgp}`
   const name = site.siteMetadata?.author?.name
-  
+
   return (
     <Helmet
       htmlAttributes={{
         lang,
       }}
       title={title}
-      titleTemplate={defaultTitle ? `%s | ${defaultTitle}` : null}
+      titleTemplate={defaultTitle ? `${defaultTitle}` : null}
       meta={[
         {
           name: `description`,
