@@ -35,7 +35,6 @@ const Bio = () => {
 
   // Set these values by editing "siteMetadata" in gatsby-config.js
   const author = data.site.siteMetadata?.author
-  const social = data.site.siteMetadata?.social
 
   const avatar = data?.avatar?.childImageSharp?.fixed
 
@@ -51,11 +50,15 @@ const Bio = () => {
               borderRadius: `50%`,
             }}
           />
-          )}
-        </Link>
+        )}
+      </Link>
       {author?.name && (
         <p>
-          Written by <Link to="/about"><strong>{author.name}</strong></Link> {author?.summary || null}
+          Written by{" "}
+          <Link to="/">
+            <strong>{author.name}</strong>
+          </Link>{" "}
+          {author?.summary || null}
         </p>
       )}
     </div>

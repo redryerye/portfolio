@@ -1,9 +1,9 @@
 module.exports = {
   siteMetadata: {
-    title: `redryerye's web`,
+    title: `Yuki Y`,
     author: {
-      name: `redryerye`,
-      summary: `who loves mobile development and hip-hop.`,
+      name: `Yuki`,
+      summary: `who loves coffee and hip-hop.`,
     },
     description: `this is redryerye's website`,
     siteUrl: `https://www.redryerye.com/`,

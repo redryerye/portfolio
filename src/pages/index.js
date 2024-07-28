@@ -1,6 +1,5 @@
-import React from "react"
+import React, { useEffect, useState, useRef } from "react"
 import { Link, graphql, useStaticQuery } from "gatsby"
-import Image from "gatsby-image"
 
 import Layout from "../components/layout"
 import SEO from "../components/seo"
@@ -8,93 +7,150 @@ import SEO from "../components/seo"
 const Home = ({ location }) => {
   const query = useStaticQuery(graphql`
     query HomeQuery {
-      github: file(absolutePath: { regex: "/logo_github.png/" }) {
-        childImageSharp {
-          fixed(width: 100) {
-            ...GatsbyImageSharpFixed
-          }
-        }
-      }
-      youtube: file(absolutePath: { regex: "/logo_youtube.png/" }) {
-        childImageSharp {
-          fixed(width: 100) {
-            ...GatsbyImageSharpFixed
-          }
-        }
-      }
-      twitter: file(absolutePath: { regex: "/logo_twitter.png/" }) {
-        childImageSharp {
-          fixed(width: 100) {
-            ...GatsbyImageSharpFixed
-          }
-        }
-      }
       site {
         siteMetadata {
           title
+          author {
+            name
+          }
         }
       }
     }
   `)
 
-  const github = query?.github?.childImageSharp?.fixed
-  const youtube = query?.youtube?.childImageSharp?.fixed
-  const twitter = query?.twitter?.childImageSharp?.fixed
+  const [shakeClass, setShakeClass] = useState("")
+  const [bounceClass, setBounceClass] = useState("")
+  const scrollStarted = useRef(false)
+
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      setShakeClass("shake")
+    }, 500)
+
+    const handleScroll = () => {
+      if (!scrollStarted.current) {
+        scrollStarted.current = true
+        setBounceClass("bounce")
+
+        // Remove the class after the animation completes
+        setTimeout(() => {
+          setBounceClass("")
+        }, 1000) // 1000ms matches the animation duration
+      }
+    }
+
+    window.addEventListener("scroll", handleScroll)
+
+    return () => {
+      clearTimeout(timer)
+      window.removeEventListener("scroll", handleScroll)
+    }
+  }, [])
+
+  const author = query.site.siteMetadata?.author
   const siteTitle = query.site.siteMetadata?.title || `redryerye`
 
   return (
     <Layout location={location} title={siteTitle}>
       <SEO title="Home" />
-      <div className="home-list">
+      <div>
+        <p>
+          hey <span className={shakeClass}>👋</span>
+        </p>
+        <p>
+          I am a coffee lover, hiphop lover, and a beginner French learner based
+          in Paris.
+        </p>
+        <p>
+          At 17, I discovered the world of startup for the first time through a{" "}
+          <a
+            class="gradient-link"
+            href="https://www.youtube.com/watch?v=kqJNQevSgP8"
+            target="_blank"
+          >
+            video
+          </a>{" "}
+          and wanted to do the same.
+        </p>
+        <p>
+          I first{" "}
+          <a
+            class="gradient-link"
+            href="https://www.youtube.com/watch?v=1XqfPD2Yg48&list=PL0d1XViCICSbj37r4CwtK211QaQKC8RJs&index=35"
+            target="_blank"
+          >
+            envisioned
+          </a>{" "}
+          creating a better solution for the overcrowded trains in Tokyo, but
+          ended up joining my friend's startup, and created an{" "}
+          <a
+            class="gradient-link"
+            href="https://www.asahi.com/dialog/articles/14233751"
+            target="_blank"
+          >
+            art streaming platform
+          </a>{" "}
+          together.
+        </p>
+        <p>
+          Later, I joined another company, where we created an{" "}
+          <a
+            class="gradient-link"
+            href="https://japan.cnet.com/article/35149892/"
+            target="_blank"
+          >
+            app for pre-ordering coffee
+          </a>{" "}
+          at the cafés we operated in Tokyo.
+        </p>
+        <p>
+          In 2022, I moved to Paris{" "}
+          <Link class="gradient-link" to="/blog/higher-and-higher">
+            because of hiphop
+          </Link>
+          .
+        </p>
+        <p>
+          I am currently working at Dott to provide a hassle free vehicle
+          renting experience in European cities.{" "}
+          <span className={bounceClass}>🚲🛴</span>
+        </p>
+      </div>
+      <div>
+        <h5>Links</h5>
         <ul className="no-bullet">
           <li>
-            <h1>
-              <Link to="/about">About me</Link>
-            </h1>
+            <a
+              href="https://www.linkedin.com/in/iamyukiyamamoto/"
+              target="_blank"
+            >
+              LinkedIn
+            </a>
           </li>
           <li>
-            <h1>
-              <Link to="/blog">Blog</Link>
-            </h1>
+            <a href="https://github.com/redryerye" target="_blank">
+              Github
+            </a>
+          </li>
+          <li>
+            <a href="https://bento.me/redryerye" target="_blank">
+              Bento
+            </a>
+          </li>
+          <li>
+            <Link to="/blog">
+              {author?.name || ``}'s personal blog in Japanese
+            </Link>
           </li>
         </ul>
       </div>
       <div>
-        <ul className="no-bullet">
-          <li>
-            <a href="https://github.com/redryerye" target="_blank">
-            <Image
-              fixed={github}
-              alt="Github"
-            />
-            </a>
-          </li>
-          <li>
-            <a href="https://www.youtube.com/channel/UCT-om9iFTiQTom5tjNfmGHw" target="_blank">
-              <Image
-                fixed={youtube}
-                alt="Youtube"
-              />
-            </a>
-          </li>
-          <li>
-            <iframe
-              className="sound-cloud-logo"
-              allowtransparency="true"
-              scrolling="no"
-              frameBorder="no"
-              src="https://w.soundcloud.com/icon/?url=http%3A%2F%2Fsoundcloud.com%2Fredryerye&color=white_transparent&size=40"
-            />
-          </li>
-          <li>
-            <a href="https://twitter.com/redryerye" target="_blank">
-              <Image
-                fixed={twitter}
-                alt="Twitter"
-              />
-            </a>
-          </li>
-        </ul>
+        <h5>Contact</h5>
+        <p>
+          Drop me an email at yymmt3 [at] gmail.com
+          <br />
+          Always happy to help.
+        </p>
       </div>
     </Layout>
   )
