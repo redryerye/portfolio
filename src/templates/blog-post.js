@@ -1,7 +1,6 @@
 import React from "react"
 import { Link, graphql } from "gatsby"
-import InstagramEmbed from 'react-instagram-embed';
-
+import InstagramEmbed from "react-instagram-embed"
 
 import Bio from "../components/bio"
 import Layout from "../components/layout"
@@ -53,15 +52,15 @@ const BlogPostTemplate = ({ data, location }) => {
         >
           <li>
             {previous && (
-              <Link to={'/blog'+previous.fields.slug} rel="prev">
-                ← {previous.frontmatter.title}
+              <Link to={"/blog" + previous.fields.slug} rel="prev">
+                ← 前の投稿： 『{previous.frontmatter.title}』
               </Link>
             )}
           </li>
           <li>
             {next && (
-              <Link to={'/blog'+next.fields.slug} rel="next">
-                {next.frontmatter.title} →
+              <Link to={"/blog" + next.fields.slug} rel="next">
+                次の投稿：『{next.frontmatter.title}』 →
               </Link>
             )}
           </li>

@@ -138,9 +138,7 @@ const Home = ({ location }) => {
             </a>
           </li>
           <li>
-            <Link to="/blog">
-              {author?.name || ``}'s personal blog in Japanese
-            </Link>
+            <Link to="/blog">Blog (Japanese)</Link>
           </li>
         </ul>
       </div>
