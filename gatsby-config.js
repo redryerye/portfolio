@@ -3,7 +3,7 @@ module.exports = {
     title: `Yuki Y`,
     author: {
       name: `Yuki`,
-      summary: `who loves coffee and hip-hop.`,
+      summary: `a coffee lover, hiphop lover, and a beginner French learner based in Paris`,
     },
     description: `this is redryerye's website`,
     siteUrl: `https://www.redryerye.com/`,
