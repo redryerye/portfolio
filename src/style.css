@@ -362,7 +362,11 @@ header h2 {
   text-align: center;
 }
 
-.gradient-link {
+.home-greeting {
+  font-size: var(--fontSize-4);
+}
+
+.home a {
   color: black;
   background-image: linear-gradient(
     90deg,
@@ -379,7 +383,7 @@ header h2 {
   transition: color 0.3s ease, background-position 0.3s ease;
 }
 
-.gradient-link:hover {
+.home a:hover {
   color: transparent;
   text-decoration: underline;
   background-position: -100% 0;

@@ -53,16 +53,17 @@ const Home = ({ location }) => {
   return (
     <Layout location={location} title={siteTitle}>
       <SEO title="Home" />
-      <div>
-        <p>
+      <div className="home">
+        <p className="home-greeting">
           hey <span className={shakeClass}>👋</span>
         </p>
+        <p>I think you came here to know about Yuki a little bit more.</p>
         <p>
-          I am a coffee lover, hiphop lover, and a beginner French learner based
-          in Paris.
+          Well, he is a coffee lover, hiphop lover, and a beginner French
+          learner based in Paris.
         </p>
         <p>
-          At 17, I discovered the world of startup for the first time through a{" "}
+          At 17, he discovered the world of startup for the first time through a{" "}
           <a
             class="gradient-link"
             href="https://www.youtube.com/watch?v=kqJNQevSgP8"
@@ -73,7 +74,7 @@ const Home = ({ location }) => {
           and wanted to do the same.
         </p>
         <p>
-          I first{" "}
+          He first{" "}
           <a
             class="gradient-link"
             href="https://www.youtube.com/watch?v=1XqfPD2Yg48&list=PL0d1XViCICSbj37r4CwtK211QaQKC8RJs&index=35"
@@ -82,7 +83,7 @@ const Home = ({ location }) => {
             envisioned
           </a>{" "}
           creating a better solution for the overcrowded trains in Tokyo, but
-          ended up joining my friend's startup, and created an{" "}
+          ended up joining his friend's startup, and created an{" "}
           <a
             class="gradient-link"
             href="https://www.asahi.com/dialog/articles/14233751"
@@ -93,7 +94,7 @@ const Home = ({ location }) => {
           together.
         </p>
         <p>
-          Later, I joined another company, where we created an{" "}
+          Later, Yuki joined another company, where they created an{" "}
           <a
             class="gradient-link"
             href="https://japan.cnet.com/article/35149892/"
@@ -101,37 +102,24 @@ const Home = ({ location }) => {
           >
             app for pre-ordering coffee
           </a>{" "}
-          at the cafés we operated in Tokyo.
+          at the cafés they operated in Tokyo.
         </p>
         <p>
-          In 2022, I moved to Paris{" "}
+          In 2022, he moved to Paris{" "}
           <Link class="gradient-link" to="/blog/higher-and-higher">
             because of hiphop
           </Link>
           .
         </p>
         <p>
-          I am currently working at Dott to provide a hassle free vehicle
+          Yuki is currently working at Dott to provide a hassle free vehicle
           renting experience in European cities.{" "}
           <span className={bounceClass}>🚲🛴</span>
         </p>
       </div>
-      <div>
-        <h5>Links</h5>
+      <div className="home">
+        <h5>Need more? Find Yuki on</h5>
         <ul className="no-bullet">
-          <li>
-            <a
-              href="https://www.linkedin.com/in/iamyukiyamamoto/"
-              target="_blank"
-            >
-              LinkedIn
-            </a>
-          </li>
-          <li>
-            <a href="https://github.com/redryerye" target="_blank">
-              Github
-            </a>
-          </li>
           <li>
             <a href="https://bento.me/redryerye" target="_blank">
               Bento
@@ -140,6 +128,19 @@ const Home = ({ location }) => {
           <li>
             <Link to="/blog">Blog (Japanese)</Link>
           </li>
+          <li>
+            <a href="https://github.com/redryerye" target="_blank">
+              Github
+            </a>
+          </li>
+          <li>
+            <a
+              href="https://www.linkedin.com/in/iamyukiyamamoto/"
+              target="_blank"
+            >
+              LinkedIn
+            </a>
+          </li>
         </ul>
       </div>
       <div>
@@ -147,7 +148,7 @@ const Home = ({ location }) => {
         <p>
           Drop me an email at yymmt3 [at] gmail.com
           <br />
-          Always happy to help.
+          Always happy to help :)
         </p>
       </div>
     </Layout>
