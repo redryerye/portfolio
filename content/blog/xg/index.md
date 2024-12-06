@@ -7,7 +7,7 @@ ogimage: "./xg.png"
 すっかり冬になった。先日パリでは雪が一日だけ降って、少し早めのクリスマス気分を味わうことが出来た。
 ![SKY](./sky.png)
 
-<p class="image-desc">冬晴れが大好き</p>
+<p class="image-desc">冬晴れっていいな</p>
 
 ## XG のライブに行った
 
