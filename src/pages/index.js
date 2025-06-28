@@ -57,24 +57,27 @@ const Home = ({ location }) => {
         <p className="home-greeting">
           hey <span className={shakeClass}>👋</span>
         </p>
-        <p>I think you came here to know about Yuki a little bit more.</p>
         <p>
-          Well, he is a coffee lover, hiphop lover, and a beginner French
-          learner based in Paris.
+          Thanks for visiting this little website where I introduce myself,
+          Yuki.
         </p>
         <p>
-          At 17, he discovered the world of startup for the first time through a{" "}
+          Well, I am a coffee lover, hiphop lover, and a beginner French learner
+          based in Paris.
+        </p>
+        <p>
+          At 17, I discovered the world of startup for the first time through a{" "}
           <a
             class="gradient-link"
             href="https://www.youtube.com/watch?v=kqJNQevSgP8"
             target="_blank"
           >
-            video
+            youtube video
           </a>{" "}
-          and wanted to do the same.
+          and wanted to try it myself.
         </p>
         <p>
-          He first{" "}
+          I first{" "}
           <a
             class="gradient-link"
             href="https://www.youtube.com/watch?v=1XqfPD2Yg48&list=PL0d1XViCICSbj37r4CwtK211QaQKC8RJs&index=35"
@@ -83,7 +86,7 @@ const Home = ({ location }) => {
             envisioned
           </a>{" "}
           creating a better solution for the overcrowded trains in Tokyo, but
-          ended up joining his friend's startup, and created an{" "}
+          ended up joining my friend's startup, and created an{" "}
           <a
             class="gradient-link"
             href="https://www.asahi.com/dialog/articles/14233751"
@@ -94,7 +97,7 @@ const Home = ({ location }) => {
           together.
         </p>
         <p>
-          Later, Yuki joined another company, where they created an{" "}
+          Later, I joined another startup, where we created an{" "}
           <a
             class="gradient-link"
             href="https://japan.cnet.com/article/35149892/"
@@ -102,23 +105,23 @@ const Home = ({ location }) => {
           >
             app for pre-ordering coffee
           </a>{" "}
-          at the cafés they operated in Tokyo.
+          at the cafés we operated in Tokyo.
         </p>
         <p>
-          In 2022, he moved to Paris{" "}
+          In 2022, I moved to Paris{" "}
           <Link class="gradient-link" to="/blog/higher-and-higher">
             because of hiphop
           </Link>
           .
         </p>
         <p>
-          Yuki is currently working at Dott to provide a hassle free vehicle
+          I am currently working at Dott to provide a hassle free vehicle
           renting experience in European cities.{" "}
           <span className={bounceClass}>🚲🛴</span>
         </p>
       </div>
       <div className="home">
-        <h5>Need more? Find Yuki on</h5>
+        <h5>You can find me also on</h5>
         <ul className="no-bullet">
           <li>
             <a href="https://bento.me/redryerye" target="_blank">
